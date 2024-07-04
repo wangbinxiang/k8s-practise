@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/auth-url: http://$host/node/auth
     nginx.ingress.kubernetes.io/auth-signin: http://$host/node
-    nginx.ingress.kubernetes.io/auth-response-headers: Cookie
+    # nginx.ingress.kubernetes.io/auth-response-headers: Cookie
 spec:
   ingressClassName: "nginx"
   rules:
